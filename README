@@ -1,0 +1,31 @@
+
+Hallgató Vajda Zsolt - GQVZJ3
+
+Leírás
+Egyszerű grafikus fájlkezelő alkalmazás Pythonban, amely képes:
+- a könyvtár tartalmának listázására
+- új mappa létrehozására
+- fájlok és mappák törlésére
+
+A program tkinter alapú GUI-t használ és külön modulokba van szervezve.
+
+Modulok és függvények
+
+filemanager_vz.py
+- `FileManagerVZ` osztály
+  - `list_files_vz()` - listázza a fájlokat
+  - `create_folder_vz()` - mappát hoz létre
+  - `delete_item_vz()` - mappát, illetve fájlokat töröl
+
+gui_vz.py
+- `FileManagerGUIVZ` osztály
+  - `refresh_vz()` - frissítés gomb, frissíti a könyvtár tartalmát
+  - `create_folder_vz()` - mappa létrehozása gomb, létrehoz egy új mappát amit el tudunk nevezni
+  - `delete_selected_vz()` - törlés gomb, kitöröl egy általunk választott mappát és annak fájljait
+
+main.py
+- `main_vz()` függvény – a program belépési pontja.
+
+Futtatás
+```bash
+python main.py
